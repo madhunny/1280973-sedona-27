@@ -106,15 +106,29 @@
       </p>
     </footer>
 
-  <!--Дополнительно открывающееся окноб но возможно там орма и требуются дороботки-->
-    <section>
-      <ul>
-        <li>Дата заезда:</li>
-        <li>Дата выезда:</li>
-        <li>Взрослые:</li>
-        <li>Дети:</li>
-      </ul>
-      <button type="button">Найти</button>
-    </section> 
+  <!--Дополнительно открывающееся окно-форма и требуются дороботки-->
+    
+      <form action="" method="">
+        <label for="check-in-fiels">Дата заезда:</label>
+        <input type="date" name="check-in" id="check-in-field" value="">
+        <img src="img/calendar.svg" class="calendar" width="21" height="22" alt="calendar">
+        <br>
+        <br>
+        <label for="check-out-field">Дата выезда:
+        <input type="date" name="check-out" id="check-out-field" value="">
+        <img src="img/calendar.svg" class="calendar" width="21" height="22" alt="calendar">
+        <br>
+        <br>
+        <label for="adult-field">Взрослые:</label>
+        <input type="number" name="adult" id="adult-field" value="">
+        <br>
+        <br>
+        <label for="kids-field">Дети:</label>
+        <input type="number" name="kids" id="kids-field" value="">
+        <br>
+        <br>
+        <input type="submit" value="Найти">
+      </form>
+  
   </body>
 </html>
