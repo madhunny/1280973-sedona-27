@@ -16,31 +16,61 @@
 a {
     text-decoration: none;
 } 
-.main-navigation {
+
+.extra-plus{
+    display: flex;
+    justify-content: space-between;
+}
+
+.background-photo {
+    background-color:  #609dc4;
+}
+
+.main-footer{
+    padding: 60px 0;
+    margin: ;
+}
+
+/* шапка сайта - navigation*/
+.navigation {
+    width: 100%;
+    height: 56px;
     font-size: 14px;
     line-height: 26px;
     color: #000000;
     background-color: white;
+    
 }
-.site-navigation,
+
+.navigation-menu {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navigation-logo {
+    position: absolute;
+    left: 50%;
+}
+
+
 .plus {
     list-style: none;
 }
-.site-navigation a {
+.navigation-menu a {
     color: black;
 }
-.site-navigation a:hover {
+.navigation-menu a:hover {
     color: #81b3d2;
 }
-.site-navigation a:focus {
-    color: rgba(0, 0, 0, 0.3);
-}
-.site-navigation a:active {
-    color: #766357; /* не уверена в этом, как показать, что мы на странице */
+
+.navigation-menu a:active {
+    color:  rgba(0, 0, 0, 0.3);  
 }
 
-
-
-.background-photo {
-    background-color:  #609dc4;
+.navigation-menu span {
+    color: #766357;
 }
