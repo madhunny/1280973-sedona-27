@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
-    <header>
+    <header class="header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
           <img src="img/logo-sedona.svg" class="logo" width="140" height="71" alt="Логотип Седона">
@@ -16,6 +16,7 @@
         <ul class="navigation-menu">
           <li><span>Информация</span></li>
           <li><a href="#">Фото и видео</a></li>
+          <li></li>
           <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
@@ -24,7 +25,7 @@
     <main class="container">
       <div class="welcome">
         <h1 class="visually-hidden">Welcome</h1>
-        <img src="img/background-photo.jpg" srcset="img/background-photo@2x.jpg 2x, img/background-photo@3x.jpg 3x" class="background-photo" width="100%" height="773" alt="Фон с фотографией гор">
+        <img src="img/background-photo.jpg" srcset="img/background-photo@2x.jpg 2x, img/background-photo@3x.jpg 3x" class="background-photo" width="1200px" height="773" alt="Фон с фотографией гор">
         <img src="img/intro-welcome.svg" class="welcome" width="459" height="353" alt="Картинка с приветствием">
         <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -68,25 +69,29 @@
           <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
         </section>
       </div>
-      <section class="tree">
-        <h2>Красивая<br>дорога</h2>
-        <p>— №3 —</p>
-        <p>Все достопримечательности<br>находятся очень близко</p>
-      </section>
-      <section class="four">
-        <h2>Небольшая<br>площадь</h2>
-        <p>— №4 —</p>
-        <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
-      </section>
-      <section class="five">
-        <h2>Мало<br>туристов</h2>
-        <p>— №5 —</p>
-        <p>Большинство едет в гранд каньон<br>и толпится там</p>  
-      </section>
-      <section class="map" class="interest">
+      <div class="tff">
+        <section class="tree">
+          <h2>Красивая<br>дорога</h2>
+          <p>— №3 —</p>
+          <p>Все достопримечательности<br>находятся очень близко</p>
+        </section>
+        <section class="four">
+          <h2>Небольшая<br>площадь</h2>
+          <p>— №4 —</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+        </section>
+        <section class="five">
+          <h2>Мало<br>туристов</h2>
+          <p>— №5 —</p>
+          <p>Большинство едет в гранд каньон<br>и толпится там</p>  
+        </section>
+      </div>
+      <section class="interest">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <p><button type="button">Поиск гостиницы в Седоне</button></p><!---надо ли это делать ссылкой-кнопкой?-->
+        <fieldset>
+          <label></label>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p class="check-in">
             <label for="check-in">Дата заезда:</label>
@@ -112,10 +117,11 @@
           </p>
           <button type="submit">Найти</button>
         </form>
+      </fieldset>
       </section class="map"> <!--не уверена про класс-->
       <img src="img/map.jpg" srcset="img/map@2x.jpg 2x, img/map@3x.jpg 3x" class="map" width="1200" height="593" alt="Карта местности Седона">
     </main>
-    <footer class="main-footer">
+    <footer class="footer">
       <div>
         <p class="footer-contacts">
           <a href="#">#Visitsedona</a><br>

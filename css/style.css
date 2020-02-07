@@ -1,7 +1,9 @@
 .page {
     margin: 0;
     padding: 0;
-  
+    width: 1280px;
+    height: 2762px;
+
     font-family: "PT Sans", sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -9,11 +11,17 @@
     color: black;
     text-transform: uppercase;
 
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     background-position: top center;
     background-repeat: no-repeat;
 }
+.header,
+.container,
+.footer {
+    background-color: #ffffff;
+    width: 1200px;
 
+}
 a {
     text-decoration: none;
 } 
@@ -27,42 +35,41 @@ a {
     padding-bottom: 56px;
 }
 
+.welcome p {
+    color: #333333;
+}
+
 .background-photo {
-    background-color:  #609dc4;
-    
+    background-color:  #609dc4; 
 }
-
-.main-footer{
-    padding: 60px 0;
-    margin: ;
-}
-
 
 /* шапка сайта - navigation*/
 .navigation {
-    width: 100%;
+    width: 1200px;
     height: 56px;
     font-size: 14px;
     line-height: 26px;
-    color: #000000;
-    
-    
+    color: #000000;     
 }
 
-.navigation-menu {
-    width: 100%;
-    height: 56px;
+.navigation-menu { 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     list-style: none;
+    height: 56px;
+    padding-right: 72px;
+    padding-left: 72px;
+}
+
+.navigation-menu :third-child {
+    width: 244px;
 }
 
 .navigation-logo {
     position: absolute;
-    left: 50%;
+    padding-left: 529px;
 }
-
 
 .navigation-menu a {
     color: black;
@@ -82,7 +89,9 @@ a {
 .plus {
     display: flex;
     justify-content: space-between;
-    
+    padding-left: 73px;
+    padding-right: 63px;
+    height: 330px;
 }
 
 .plus-extra {
@@ -94,29 +103,94 @@ a {
     font-size: 21px;
 }
 
+.plus-extra p {
+    color: #333333; 
+}
 
 .one,
 .two {
     display: flex;
     align-items: flex-start;
-    width: 100%;
-    height: 256px;
-    
-    
-
+    height: 256px;  
 }
 .one-text,
 .two-text {
     line-height: 21px;
     text-align: center; 
+    width: 400px;
     height: 256px;
     align-content: center;
     background-color: #81b3d2;
-    color: #ffffff;
+    color: #ffffff;  
+}
+
+.tff {
+    display: flex;
+    justify-content: space-between;
+    height: 256px;
+    background-color: #eeeeee;
+    text-align: center;  
+}
+
+.tree,
+.four,
+.five {
+    width: 400px;
+}
+
+.tree p,
+.four p,
+.five p {
+    color:  #333333;
+}
+
+.interest {
+    width: 1200px;
+    text-align: center;
+}  
+
+.interest p {
+    color: #333333;
+}
+
+
+ .footer{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+}
+
+
+.footer-social ul {
+    list-style: none;
+    background-color: #81b3d2;
 }
 
 
 
 
-   
 
+
+/*seconf page*/
+
+.page2 {
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+    height: 933px;
+
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.filter-form {
+    background-color: url;
+}
