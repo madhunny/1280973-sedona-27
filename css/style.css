@@ -37,6 +37,7 @@ a {
     text-align: center;
     line-height: 26px;
     padding-bottom: 56px;
+    background-image: url("../img/background-photo.jpg");
 }
 
 .welcome p {
