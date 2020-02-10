@@ -40,6 +40,11 @@ a {
     background-image: url("../img/background-photo.jpg");
 }
 
+.intro-welcome {
+    margin-top: 76px
+    ;
+}
+
 .welcome p {
     color: #333333;
 }
