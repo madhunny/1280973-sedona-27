@@ -4,7 +4,7 @@
     margin-right: 40px;
     margin-bottom: 0;
     padding: 0; 
-    width: 1280px;
+    width: 1200px;
     height: 2762px;
 
     font-family: "PT Sans", sans-serif;
@@ -17,6 +17,7 @@
     background-color: #f2f2f2;
     background-position: top center;
     background-repeat: no-repeat;
+    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 .header,
 .container,
@@ -35,8 +36,6 @@ a {
 
 .welcome {
     text-align: center;
-    line-height: 26px;
-    padding-bottom: 56px;
     background-image: url("../img/background-photo.jpg");
 }
 
@@ -45,8 +44,17 @@ a {
     ;
 }
 
-.welcome p {
+.reason {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 216px;
+    line-height: 26px;
+}
+.reason p {
     color: #333333;
+    
 }
 
 .background-photo {
@@ -54,9 +62,11 @@ a {
 }
 
 .polygon {
-    width: 1203px;
+    width: 1200px;
     height: 59px;
     object-fit: contain;
+    margin-top: 22px;
+    margin-bottom: -5px;
   }
 
 /* шапка сайта - navigation*/
@@ -103,11 +113,14 @@ a {
     color: #766357;
 }
 
+ 
 .plus {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 330px;
+    margin: 0;
+    padding: 0;
 }
 
 .tff {
@@ -116,6 +129,8 @@ a {
     align-items: center;
     background-color:  #eeeeee;
     height: 256px;
+    margin: 0;
+    padding: 0;
 }
 
 .plus-extra,
@@ -132,15 +147,15 @@ a {
 .five h2 {
     font-size: 21px;
 }
-
+/* not sure if correct*/
 .plus-extra p,
-.tree p,
-.four p,
-.five p, 
-.interest p {
+.tree-p,
+.four-p,
+.five-p, {
     color: #333333; 
+    
 }
-/* don't know who do it*/
+
 .one,
 .two {
     display: flex;
@@ -153,18 +168,16 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    line-height: 21px;
-    text-align: center; 
+    text-align: center;
     width: 400px;
     height: 256px;
-    align-items: center;
     background-color: #81b3d2;
     color: #ffffff;  
 }
 
 .one-text-h2,
-.two-text-h2 {
-    margin: 0;
+.two-text-h2, {
+    margin-top: 0;
 }
 .one-picture,
 .two-picture {
@@ -172,18 +185,23 @@ a {
 }
 
 .interest {
-    width: 1200px;
-    height: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    margin-top: 57px;
-    margin-bottom: 52px;
+    height: 205px; 
+    margin: 0; 
 }  
 
-.interest h2 {
+.interest-h2 {
     font-size: 30px;
-    line-height: 36px;
+    line-height: 36px;   
 }
 
+.interest-p {
+    margin-top: 0;
+    color: #333333; 
+}
 
 .brown-button {
     width: 568px;
@@ -212,8 +230,6 @@ a {
     width: 568px; 
     height: 395px;
     background-color: #ffffff;
-    font-size: 14px;
-    line-height: 21px;
     margin-left: 316px;
     margin-right: 316px;
 
@@ -225,11 +241,9 @@ a {
     background-color: #81b3d2;
     text-align: center;
     color: #ffffff;
-    font-family: "PT Sans" sans-serif;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
-    font-size: bold;
     border: none;
     margin: 55px;
 }
@@ -250,6 +264,8 @@ a {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    color: #000000;
+    text-decoration: none;
 }
 
 .footer-social {
@@ -267,6 +283,7 @@ a {
     margin-left: 6px;
     align-items: center;
     justify-content: center;  
+    
 }
 
 .footer-copyright {
