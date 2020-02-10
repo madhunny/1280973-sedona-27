@@ -150,6 +150,9 @@ a {
 }
 .one-text,
 .two-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     line-height: 21px;
     text-align: center; 
     width: 400px;
@@ -157,6 +160,15 @@ a {
     align-items: center;
     background-color: #81b3d2;
     color: #ffffff;  
+}
+
+.one-text-h2,
+.two-text-h2 {
+    margin: 0;
+}
+.one-picture,
+.two-picture {
+    height: 256px;
 }
 
 .interest {
