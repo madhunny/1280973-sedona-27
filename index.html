@@ -14,7 +14,7 @@
           <img src="img/logo-sedona.svg" class="logo" width="140" height="71" alt="Логотип Седона">
         </a>
         <ul class="navigation-menu">
-          <li><span>Информация</span></li>
+          <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li></li>
           <li><a href="#">Карта штата</a></li>
@@ -27,6 +27,7 @@
         <h1 class="visually-hidden">Welcome</h1>
         <img src="img/background-photo.jpg" srcset="img/background-photo@2x.jpg 2x, img/background-photo@3x.jpg 3x" class="background-photo" width="1200px" height="773" alt="Фон с фотографией гор">
         <img src="img/intro-welcome.svg" class="welcome" width="459" height="353" alt="Картинка с приветствием">
+        <img src="img/polygon.jpg" srcset="img/polygon@2x.jpg 2x, img/polygon@3x.jpg 3x" class="polygon" width="1203px" height="59px" alt="Картинка с геометрической фигурой">
         <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
@@ -69,57 +70,64 @@
           <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
         </section>
       </div>
-      <div class="tff">
-        <section class="tree">
-          <h2>Красивая<br>дорога</h2>
-          <p>— №3 —</p>
-          <p>Все достопримечательности<br>находятся очень близко</p>
-        </section>
-        <section class="four">
-          <h2>Небольшая<br>площадь</h2>
-          <p>— №4 —</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
-        </section>
-        <section class="five">
-          <h2>Мало<br>туристов</h2>
-          <p>— №5 —</p>
-          <p>Большинство едет в гранд каньон<br>и толпится там</p>  
-        </section>
-      </div>
+      <section>
+        <ul class="tff">
+          <li class="tree">
+            <h2>Красивая<br>дорога</h2>
+            <p>— №3 —</p>
+            <p>Все достопримечательности<br>находятся очень близко</p>
+          </li>
+          <li class="four">
+            <h2>Небольшая<br>площадь</h2>
+            <p>— №4 —</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+          </li>
+          <li class="five">
+            <h2>Мало<br>туристов</h2>
+            <p>— №5 —</p>
+            <p>Большинство едет в гранд каньон<br>и толпится там</p>  
+          </li>
+        </ul>
+      </section>
       <section class="interest">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <p><button type="button">Поиск гостиницы в Седоне</button></p><!---надо ли это делать ссылкой-кнопкой?-->
-        <fieldset>
-          <label></label>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p class="check-in">
-            <label for="check-in">Дата заезда:</label>
-            <input id="check-in" type="date" name="check" value="2017-04-24">
-            <img src="img/calendar.svg" class="calendar" width="21" height="22" alt="Иконка календаря">
-          </p>
-          <p class="check-out">
-            <label for="check-out">Дата выезда:</label>
-            <input id="check-out" type="date" name="check" value="2007-07-04">
-            <img src="img/calendar.svg" class="calendar" width="21" height="22" alt="Иконка календаря">
-          </p>
-          <p class="adult-field">
-            <label for="adult-field">Взрослые:</label>
-            <button type="button">-</button>
-            <input id="adult-field" type="number" name="adult" value="2">
-            <button type="button">+</button>
-          </p>
-          <p class="kids-field">
-            <label for="kids-field">Дети:</label>
-            <button type="button">-</button>
-            <input type="number" name="kids" id="kids-field" value="0">
-            <button type="button">+</button>
-          </p>
-          <button type="submit">Найти</button>
-        </form>
-      </fieldset>
-      </section class="map"> <!--не уверена про класс-->
-      <img src="img/map.jpg" srcset="img/map@2x.jpg 2x, img/map@3x.jpg 3x" class="map" width="1200" height="593" alt="Карта местности Седона">
+     </section>
+      
+        <button type="button" class="brown-button">Поиск гостиницы в Седоне</button><!---надо ли это делать ссылкой-кнопкой?-->
+       
+      <div class="form">   
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p class="check-in">
+              <label for="check-in">Дата заезда:</label>
+              <input id="check-in" type="date" name="check" value="2017-04-24">
+              <img src="img/calendar.svg" class="calendar" width="21" height="22" alt="Иконка календаря">
+            </p>
+            <p class="check-out">
+              <label for="check-out">Дата выезда:</label>
+              <input id="check-out" type="date" name="check" value="2007-07-04">
+              <img src="img/calendar.svg" class="calendar" width="21" height="22" alt="Иконка календаря">
+            </p>
+            <p class="adult-field">
+              <label for="adult-field">Взрослые:</label>
+              <button type="button">-</button>
+              <input id="adult-field" type="number" name="adult" value="2">
+              <button type="button">+</button>
+            </p>
+            <p class="kids-field">
+              <label for="kids-field">Дети:</label>
+              <button type="button">-</button>
+              <input type="number" name="kids" id="kids-field" value="0">
+              <button type="button">+</button>
+            </p>
+            <button type="submit" class="blue-button">Найти</button>
+          </form>
+        
+      </div> 
+  
+      <div class="map"> <!--не уверена про класс-->
+      <img src="img/map.jpg" srcset="img/map@2x.jpg 2x, img/map@3x.jpg 3x" class="map" width="1200" height="473" alt="Карта местности Седона">
+      </div>
     </main>
     <footer class="footer">
       <div>
@@ -128,11 +136,11 @@
           Тел: +7(495) 666-02-66
         </p>
       </div>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#" area-label="Твиттер"><img src="img/twitter.svg" class="twitter" width="17" height="15" alt=""></a></li>
-          <li><a class="social-button" href="#" area-label="Фэйсбук"><img src="img/fb-icon.svg" class="fb" width="12" height="22" alt=""></a></li>
-          <li><a class="social-button" href="#" area-label="Ютуб"><img src="img/youtube.svg" class="youtube" width="20" height="16" alt=""></a></li>
+      <div>
+        <ul class="footer-social">
+          <li class="social-button"><a href="#" area-label="Твиттер"><img src="img/twitter.svg" class="twitter" width="17" height="15" alt=""></a></li>
+          <li class="social-button"><a href="#" area-label="Фэйсбук"><img src="img/fb-icon.svg" class="fb" width="12" height="22" alt=""></a></li>
+          <li class="social-button"><a href="#" area-label="Ютуб"><img src="img/youtube.svg" class="youtube" width="20" height="16" alt=""></a></li>
         </ul>
       </div>
       <div>
