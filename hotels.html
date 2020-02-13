@@ -24,56 +24,62 @@
     </header>
     <main class="container">
     <section class="filter-form">
-      <img src="img/filter-background.jpg"
-      srcset="img/filter-background@2x.jpg 2x, img/filter-background@3x.jpg 3x" class="filter-background" width="1200px" height="562px" alt="Фото гор размытое">
- 
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset>
-      <legend>Инфраструктура:</legend>
-      <ul>
+      <div>
+      <ul class="filter-infra">
+        Инфраструктура:  
         <li>
-          <input type="checkbox" name="pool" id="pool-field" checked>
+          <input class="checkbox-on" type="checkbox" name="pool" id="pool-field" checked>
           <label for="pool-field">Бассейн</label>
         </li>
         <li>
-          <input type="checkbox" name="parking" id="parking-field">
+          <input class="checkbox-off"  type="checkbox" name="parking" id="parking-field">
           <label for="parking-field">Парковка</label>
         </li>
         <li>
-          <input type="checkbox" name="Wi-fi" id="wi-fi-field">
+          <input class="checkbox-off"  type="checkbox" name="Wi-fi" id="wi-fi-field">
           <label for="wi-fi-field">Wi-fi</label>
         </li>
-      </ul>
-      </fieldset>
-      <fieldset>
-      <legend>Тип жилья:</legend>
-      <ul>
-        <il>
-          <input type="checkbox" name="hotel" id="hotel-field" checked>
+      </ul> 
+      </div> 
+      <div>
+      <ul class="filter-type-home">
+        Тип жилья:
+        <li>
+          <input class="checkbox-on"  type="checkbox" name="hotel" id="hotel-field" checked>
           <label for="hotel-field">Гостиница</label>
         </il>
         <li>
-          <input type="checkbox" name="motel" id="motel-field" checked>
+          <input class="checkbox-on"  type="checkbox" name="motel" id="motel-field" checked>
           <label for="motel-field">Мотель</label>
         </li>
         <li>
-          <input type="checkbox" name="appartments" id="appartments-field" checked>
+          <input class="checkbox-on"  type="checkbox" name="appartments" id="appartments-field" checked>
           <label for="appartments-field"> Апартаменты</label>
         </li>
       </ul>
-      </fieldset>
-      <label for="price-day">Стоимость в сутки (р)</label>
-        <p> от 0 до 3000</p><!---Чего-то не хватает, не пойму как написать эту часть-->
-        <input type="range" name="price-day" id="price-day" min="0" max="3000" step="10"><br>
-        <button type="submit">Показать</button>
+      </div>
+      <div class="filter-range">
+        <div class="filter-range-title">Стоимость в сутки (р):</div>
+        <div class="price-controls">
+          <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+          <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+        </div>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+        <button class="btn-transparent" type="submit">Показать</button>
+      </div>
     </form>
-    </section>
-    <section>
-    <!--Вообще не уверена в этом куске, это часть предыдущей формы или нет-->
+  </section>
+    <section class="sorting"> 
       <h2>Найдено:3</h2>
-      <fieldset>
-      <legend>Сортировка:</legend>
-      <ul>
+      <p> Сортировка:</p>
+      <ul class="sorting-ptr"> <!---спросить как это делатьб это ссылки или кнопки или что это-->
         <li>
           <input type="radio" name="accomodation-group" value="price" id="filter-price">
           <label for="filter-price">По цене</label>
@@ -87,17 +93,20 @@
           <label for="filter-raiting">По рейтингу</label>
         </li>
       </ul>
+      <div class="icon-up-dir">
       <button type="submit"><img src="img/icon-up-dir.svg" class="icon-up-dir" width="11" height="10" alt="Стрелка вверх"></button>
       <button type="submit"><img src="img/icon-down-dir.svg" class="icon-down-dir" width="11" height="10" alt="Стрелка вниз"></button>
-      </fieldset>
+      </div>
     </section>
     <section class="hotel">
       <img src="img/hotel-picture.jpg" srcset="img/hotel-picture@2x.jpg 2x, img/hotel-picture@3x.jpg 3x" class="hotel-picture" width="135" height="90" alt="Гостиница">
+      <div>
       <h2>Amara Resort & Spa</h2>
       <p>Гостиница</p>
       <p>От 4000р.</p>
-      <button type="button">Подробнее</button>
-      <button type="button">Забронировать</button><!---Или надо тут Input Type?-->
+      <button class=" more" type="button">Подробнее</button>
+      <button class="booking" type="submit">Забронировать</button>
+    </div>
       <ul class="stars">
         <li><img src="img/star.svg" class="star" width="18" height="17" alt="Звезда"></li>
         <li><img src="img/star.svg" class="star" width="18" height="17" alt="Звезда"></li>
@@ -108,11 +117,13 @@
     </section>
     <section class="motel">
       <img src="img/hotel-picture2.jpg" srcset="img/hotel-picture2@2x.jpg 2x, img/hotel-picture2@3x.jpg 3x" class="hotel-picture" width="135" height="90" alt="Мотель">
+      <div>
       <h2>Desert Quail Inn</h2>
       <p>Мотель</p>
       <p>От 3000р.</p>
-      <button type="button">Подробнее</button>
-      <button type="button">Забронировать</button>
+      <button class=" more" type="button">Подробнее</button>
+      <button class="booking" type="submit">Забронировать</button>
+      </div>
       <ul class="stars">
         <li><img src="img/star.svg" class="star" width="18" height="17" alt="Звезда"></li>
         <li><img src="img/star.svg" class="star" width="18" height="17" alt="Звезда"></li>
@@ -122,11 +133,13 @@
     </section>
     <section class="appart">
       <img src="img/hotel-picture3.jpg" srcset="img/hotel-picture3@2x.jpg 2x, img/hotel-picture3@3x.jpg 3x" class="hotel-picture" width="135" height="90" alt="Апартаменты">
+      <div>
       <h2>Villas at Poco Diablo</h2>
       <p>Апартаменты</p>
       <p>От 2000р.</p>
-      <button type="button">Подробнее</button>
-      <button type="submit">Забронировать</button>
+      <button class=" more" type="button">Подробнее</button>
+      <button class="booking" type="submit">Забронировать</button>
+      </div>
       <ul class="stars">
         <li><img src="img/star.svg" class="star" width="18" height="17" alt="Звезда"></li>
         <li><img src="img/star.svg" class="star" width="18" height="17" alt="Звезда"></li>
