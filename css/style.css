@@ -343,27 +343,24 @@ b {
     background-color: #ffffff;
 }
 
-/*......
-
-
-.icon-up-dir {
-    height: 10px;
-    object-fit: contain;
-    background-color: #cacaca;
+.icon {
+   
 }
-.icon-up-dir:hover {
-    width: 11px;
-    height: 10px;
-    object-fit: contain;
-}
-.icon-up-dir:active {
-    width: 11px;
-    height: 10px;
-    object-fit: contain;
-    background-color: #81b3d2;
-}
-*/
 
+.icon-up-dir,
+.icon-down-dir {
+    color: rgba(0, 0, 0, 0.3);
+    border: none;
+    background: none;
+}
+.icon-up-dir:hover,
+.icon-down-dir:hover {
+    color: #81b3d2;
+}
+.icon-up-dir:active,
+.icon-down-dir:active {
+    color: #000000;
+}
 
 .hotel,
 .motel,
@@ -419,31 +416,40 @@ b {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+}
 
+.sorting-p {
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .sorting-ptr {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    list-style: none;
-    
+    list-style: none; 
+    font-size: 12px;
+    line-height: 18px;  
 }
 
-.sorting-ptr label {
+.sorting-ptr a {
     color: rgba(0, 0, 0, 0.3);
     text-decoration: underline dotted;
+    text-transform: uppercase;
+    border: none;
+    background: none; 
+    padding-left: 33px;
 }
 
-.sorting-ptr label:hover {
+.sorting-ptr a:hover {
     color: #81b3d2;
-    text-decoration: none;
+    text-decoration: none;   
 }
 
-.sorting-ptr label:active {
+.sorting-ptr a:active {
     color: #000000;
-    text-decoration: none;
+    text-decoration: none;   
 }
 
 /*second page form*/

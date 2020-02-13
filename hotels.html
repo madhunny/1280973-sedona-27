@@ -78,24 +78,20 @@
   </section>
     <section class="sorting"> 
       <h2>Найдено:3</h2>
-      <p> Сортировка:</p>
-      <ul class="sorting-ptr"> <!---спросить как это делатьб это ссылки или кнопки или что это-->
-        <li>
-          <input type="radio" name="accomodation-group" value="price" id="filter-price">
-          <label for="filter-price">По цене</label>
-        </li>
-        <li>
-          <input type="radio" name="accomodation-group" value="type" id="filter-type">
-          <label for="filter-type">По типу</label>
-        </li>
-        <li>
-          <input type="radio" name="accomodation-group" value="raiting" id="filter-raiting">
-          <label for="filter-raiting">По рейтингу</label>
-        </li>
-      </ul>
-      <div class="icon-up-dir">
-      <button type="submit"><img src="img/icon-up-dir.svg" class="icon-up-dir" width="11" height="10" alt="Стрелка вверх"></button>
-      <button type="submit"><img src="img/icon-down-dir.svg" class="icon-down-dir" width="11" height="10" alt="Стрелка вниз"></button>
+      <ul class="sorting-ptr">
+       <li>Сортировка:</li>
+       <li><a href="#">По цене</a></li>
+       <li><a href="#">По типу</a></li>
+       <li><a href="#">По рейтингу</a></li>
+
+      <!--
+        <li><button class="sorting-ptr-price" type="submit">По цене</button></li>
+        <li><button class="sorting-ptr-type" type="submit"></button></li>
+        <li><button class="sorting-ptr-raiting" type="submit"></button></li>-->
+       </ul>
+      <div class="icon">
+      <button class="icon-up-dir" type="submit"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх"></button>
+      <button class="icon-down-dir" type="submit"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз"></button>
       </div>
     </section>
     <section class="hotel">
