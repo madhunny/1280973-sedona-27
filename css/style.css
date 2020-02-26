@@ -66,11 +66,9 @@ height: auto;
 }
 
 .polygon {
-    width: 1200px;
-    height: 59px;
     object-fit: contain;
     margin-top: 22px;
-    margin-bottom: -5px;
+    margin-bottom: -6px;
   }
 
 /* шапка сайта - navigation*/
@@ -118,6 +116,7 @@ height: auto;
 .navigation-logo {
     position: absolute;
     margin-left: 529px;
+    
 }
 
 .navigation-menu a {
