@@ -10,7 +10,7 @@
     font-family: "PT Sans", sans-serif;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 700;
+    font-weight: normal;
     color: black;
     text-transform: uppercase;
 
@@ -79,23 +79,25 @@ height: auto;
     height: 56px;
     font-size: 14px;
     line-height: 26px;
+    font-weight: bold;
     color: #000000;     
 }
 
 .navigation-menu { 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     list-style: none;
     min-height: 56px;
-    padding-right: 72px;
-    padding-left: 72px;
+    padding: 0;
 }
 
-.navigation-menu :third-child {
-    width: 244px;
+.navigation-menu li:nth-child(3),
+.navigation-menu li:nth-child(4) {
+
 }
+
 
 .navigation-logo {
     position: absolute;
@@ -151,7 +153,7 @@ height: auto;
     font-size: 21px;
 }
 /* not sure if correct*/
-.plus-extra p,
+.plus-extra-p,
 .tree-p,
 .four-p,
 .five-p, {
@@ -225,6 +227,7 @@ height: auto;
     margin-top: 0;   
 }
 
+
 .form {
     display: flex;
     justify-content: space-between;
@@ -235,6 +238,7 @@ height: auto;
     background-color: #ffffff;
     margin-left: 316px;
     margin-right: 316px;
+    font-weight: bold;
 }
 
 .blue-button {
@@ -245,10 +249,18 @@ height: auto;
     color: #ffffff;
     font-size: 21px;
     line-height: 26px;
+    font-weight: bold;
     text-transform: uppercase;
     border: none;
     margin: 55px;
 }
+
+.form-imput {
+    display: block;
+    position: absolute;
+}
+
+
 
 .map {
 
@@ -282,7 +294,7 @@ height: auto;
     height: 48px;
     margin-left: 6px;
     align-items: center;
-    justify-content: center;     
+    justify-content: center;  
 }
 
 .footer-copyright {
@@ -315,19 +327,23 @@ b {
 }
 
 .filter-infra,
-.filter-type-home {
+.filter-home {
 
     list-style: none;
     color: #ffffff;
     text-align: left;
     padding: 0;
     margin-top: 0;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .filter-infra li,
-.filter-type-home li {
+.filter-home li {
     padding-top: 5px;
     padding-bottom: 5px;
+    font-weight: normal;
+    font-size: 14px;
 }
 
 .checkbox {
@@ -353,17 +369,17 @@ b {
 
 .icon-up-dir,
 .icon-down-dir {
-    color: rgba(0, 0, 0, 0.3);
+    fill: rgba(0, 0, 0, 0.3);
     border: none;
     background: none;
 }
 .icon-up-dir:hover,
 .icon-down-dir:hover {
-    color: #81b3d2;
+    fill: #000000 ;
 }
 .icon-up-dir:active,
 .icon-down-dir:active {
-    color: #000000;
+    fill: #81b3d2;
 }
 
 .hotel,
@@ -382,7 +398,7 @@ b {
 .stars {
     display: flex;
     flex-direction: row;
-    list-style: none;  
+    list-style: none; 
 }
 
 .rating {
@@ -392,10 +408,6 @@ b {
     text-align: center;
 }
 
-.button {
-    display: inline-block;
-}
-
 .more {
     width: 110px;
     height: 27px;
@@ -403,7 +415,7 @@ b {
     border: none;
     color: #ffffff;
     text-transform: uppercase; 
-    font-weight: bold;
+    font-weight: bold;   
 }
 
 .booking {
@@ -413,8 +425,9 @@ b {
     border: none;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: bold;    
+    font-weight: bold;  
 }
+
 
 .sorting {
     display: flex;
@@ -457,6 +470,7 @@ b {
 }
 
 /*second page form*/
+
 .filter-range {
     width: 330px;
   
