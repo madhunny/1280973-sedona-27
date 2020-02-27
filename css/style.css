@@ -42,6 +42,8 @@ height: auto;
 .welcome {
     text-align: center;
     background-image: url("../img/background-photo.jpg");
+    width: 1200px;
+    height: 492px;
 }
 
 .intro-welcome {
@@ -66,9 +68,8 @@ height: auto;
 }
 
 .polygon {
-    object-fit: contain;
-    margin-top: 22px;
-    margin-bottom: -6px;
+    object-fit: contain; 
+    margin-left: -1px;
   }
 
 /* шапка сайта - navigation*/
@@ -278,15 +279,27 @@ height: auto;
 
 
 .map {
-
+    background-image: url("../img/map.jpg");
+    width: 1200px;
+    height: 593px; 
 }
 
- .footer{
+ .footer {
     display: flex;
     justify-content:space-around;
     align-items: center;
     height: 120px;
-}
+    margin-top: -125px;
+    opacity: 0.9;
+ }
+
+ .footer-2 {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 120px;
+    background-color: #ffffff;
+ }
 
 .footer-contacts {
     font-size: 21px;
@@ -300,6 +313,7 @@ height: auto;
     display: flex;
     flex-direction: row;
     list-style: none;  
+    
 }
 
 .social-button {
