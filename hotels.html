@@ -25,8 +25,8 @@
     <section class="filter-form">
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <div>
-      <ul class="filter-infra">
-        Инфраструктура:  
+      <ul class="filter-infra"> 
+        <li>Инфраструктура:</li>  
         <li>
           <input class="checkbox-on" type="checkbox" name="pool" id="pool-field" checked>
           <label for="pool-field">Бассейн</label>
@@ -42,12 +42,12 @@
       </ul> 
       </div> 
       <div>
-      <ul class="filter-home">
-        Тип жилья:
+      <ul class="filter-home"> 
+        <li class="">Тип жилья:</li>
         <li>
           <input class="checkbox-on"  type="checkbox" name="hotel" id="hotel-field" checked>
           <label for="hotel-field">Гостиница</label>
-        </il>
+        </li>
         <li>
           <input class="checkbox-on"  type="checkbox" name="motel" id="motel-field" checked>
           <label for="motel-field">Мотель</label>
@@ -76,7 +76,7 @@
     </form>
   </section>
     <section class="sorting"> 
-      <h2>Найдено:3</h2>
+      <h2 class="sorting-h2">Найдено:3</h2>
       <ul class="sorting-ptr">
        <li>Сортировка:</li>
        <li><a href="#">По цене</a></li>
@@ -93,12 +93,14 @@
       <button class="icon-down-dir" type="submit"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз"></button>
       </div>
     </section>
-    <section class="hotel">
+    <section class="resort">
       <img src="img/hotel-picture.jpg" srcset="img/hotel-picture@2x.jpg 2x, img/hotel-picture@3x.jpg 3x" class="hotel-picture" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa">
-      <div>
+      <div class="hotel-name">
       <h2>Amara Resort & Spa</h2>
+      <div class="hotel-type">
       <p>Гостиница</p>
       <p>От 4000р.</p>
+      </div>
       <button class="more-button" type="button">Подробнее</button>
       <button class="booking-button" type="submit">Забронировать</button>
     </div>
@@ -114,10 +116,12 @@
     </section>
     <section class="motel">
       <img src="img/hotel-picture2.jpg" srcset="img/hotel-picture2@2x.jpg 2x, img/hotel-picture2@3x.jpg 3x" class="hotel-picture" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
-      <div>
+      <div class="hotel-name">
       <h2>Desert Quail Inn</h2>
+      <div class="hotel-type">
       <p>Мотель</p>
       <p>От 3000р.</p>
+      </div>
       <button class="more-button" type="button">Подробнее</button>
       <button class="booking-button" type="submit">Забронировать</button>
       </div>
@@ -132,10 +136,12 @@
     </section>
     <section class="appart">
       <img src="img/hotel-picture3.jpg" srcset="img/hotel-picture3@2x.jpg 2x, img/hotel-picture3@3x.jpg 3x" class="hotel-picture" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo">
-      <div>
+      <div class="hotel-name">
       <h2>Villas at Poco Diablo</h2>
+      <div class="hotel-type">
       <p>Апартаменты</p>
       <p>От 2000р.</p>
+    </div>
       <button class=" more-button" type="button">Подробнее</button>
       <button class="booking-button" type="submit">Забронировать</button>
       </div>
