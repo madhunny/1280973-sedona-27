@@ -8,28 +8,32 @@
   <link href="https://htmlacademy-htmlcss.github.io/1280973-sedona-27/6/css/normalize.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
 
+  <div class="wrapper">
+
 <body class="page">
   <header class="header">
-    <nav class="navigation">
-      <a class="navigation-logo" href="./index.html">
-        <img src="./img/logo-sedona.svg" class="logo" width="140px" height="71px" alt="Логотип Седона">
+    <nav class="header-nav">
+      <a class="header-logo logo" href="./index.html">
+        <img class="header-logo-img" src="./img/logo-sedona.svg" width="140px" height="71px"
+          alt="Логотип  City of Sedona">
       </a>
-      <ul class="navigation-menu left">
-        <li class="navigation-menu-item"><a href="">Информация</a></li>
-        <li class="navigation-menu-item"><a href="">Фото и видео</a></li>
+      <ul class="header-nav-list left">
+        <li><a class="header-nav-list-link" href="">Информация</a></li>
+        <li><a class="header-nav-list-link" href="">Фото и видео</a></li>
       </ul>
-      <ul class="navigation-menu right">
-        <li class="navigation-menu-item"><a href="">Карта штата</a></li>
-        <li class="navigation-menu-item"><a href="./hotels.html">Гостиницы</a></li>
+      <ul class="header-nav-list right">
+        <li><a class="header-nav-list-link" href="">Карта штата</a></li>
+        <li><a class="header-nav-list-link" href="">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
   <main class="container">
-    <section class="filter-form">
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+    <section class="filter">
+      <h2 class="visually-hidden">Блок фильтрации параметров</h2>
+      <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Инфраструктура:</legend>
-          <ul class="filter-infra">
+          <ul class="filter-form-list">
             <li>
               <input class="checkbox-on" type="checkbox" name="pool" id="pool-field" checked>
               <label for="pool-field">Бассейн</label>
@@ -46,7 +50,7 @@
         </fieldset>
         <fieldset>
           <legend>Тип жилья:</legend>
-          <ul class="filter-home">
+          <ul class="filter-form-list">
             <li>
               <input class="checkbox-on" type="checkbox" name="hotel" id="hotel-field" checked>
               <label for="hotel-field">Гостиница</label>
@@ -62,52 +66,53 @@
           </ul>
         </fieldset>
         <fieldset class="filter-range">
-          <legend class="filter-range-title">Стоимость в сутки (р):</legend>
+          <legend class="filter-form-range-title">Стоимость в сутки (р):</legend>
           <div class="price-controls">
-            <label class="min-price">от <input type="number" name="min-price" value="0"></label>
-            <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+            <label class="price-control-min-price">от <input type="number" name="min-price" value="0"></label>
+            <label class="price-control-max-price">до <input type="number" name="max-price" value="3000"></label>
           </div>
           <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
+            <div class="range-control-scale">
+              <div class="range-control-bar"></div>
             </div>
             <div class="range-toggle range-toggle-min"></div>
             <div class="range-toggle range-toggle-max"></div>
           </div>
         </fieldset>
-        <button class="btn-transparent" type="submit">Показать</button>
+        <button class="button-transparent" type="submit">Показать</button>
       </form>
     </section>
     <section class="sorting">
-      <h2 class="sorting-h2">Найдено:3</h2>
-      <ul class="sorting-ptr">
+      <h2 class="sorting-h2">Найдено:<span class="count">3</span></h2>
+      <ul class="sorting-list">
         <li>Сортировка:</li>
         <li><a href="">По цене</a></li>
         <li><a href="">По типу</a></li>
         <li><a href="">По рейтингу</a></li>
       </ul>
-      <div class="icon">
-        <button class="icon-up-dir" type="submit"><img src="./img/icon-up-dir.svg" width="11px" height="10px"
+      <div class="sorting-icon">
+        <button class="button-sorting-icon-up" type="submit"><img src="./img/icon-up-dir.svg" width="11px" height="10px"
             alt="Стрелка вверх"></button>
-        <button class="icon-down-dir" type="submit"><img src="./img/icon-down-dir.svg" width="11px" height="10px"
-            alt="Стрелка вниз"></button>
+        <button class="button-sorting-icon-down" type="submit"><img src="./img/icon-down-dir.svg" width="11px"
+            height="10px" alt="Стрелка вниз"></button>
       </div>
     </section>
-    <section>
+    <section class="hotel-list">
       <h2>Найденные отели</h2>
-      <div class="resort">
-        <div class="column">
-          <img src="./img/hotel-picture.jpg" srcset="./img/hotel-picture@2x.jpg 2x, ./img/hotel-picture@3x.jpg 3x"
-            class="hotel-picture" width="135px" height="90px" alt="Фото гостиницы Amara Resort & Spa">
+      <div class="hotel-item">
+        <div class="hotel-item-column">
+          <img class="hotel-item-img" src="./img/hotel-picture.jpg"
+            srcset="./img/hotel-picture@2x.jpg 2x, ./img/hotel-picture@3x.jpg 3x" width="135px" height="90px"
+            alt="Фото гостиницы Amara Resort & Spa">
         </div class>
-        <div class="hotel-name">
+        <div class="hotel-item-name">
           <h2>Amara Resort & Spa</h2>
           <p>Гостиница</p>
           <p>От 4000р.</p>
-          <button class="more-button" type="button">Подробнее</button>
-          <button class="booking-button" type="submit">Забронировать</button>
+          <button class="button-more" type="button">Подробнее</button>
+          <button class="button-booking" type="submit">Забронировать</button>
         </div>
-        <div class="hotel-value">
+        <div class="hotel-item-value">
           <ul class="stars">
             <li><img src="./img/star.svg" class="star" width="18px" height="17px" alt="Звезда"></li>
             <li><img src="./img/star.svg" class="star" width="18px" height="17px" alt="Звезда"></li>
@@ -117,40 +122,43 @@
           <p class="rating">Рейтинг: 8,5</p>
         </div>
       </div>
-      <div class="motel">
-        <div class="column">
-          <img src="./img/hotel-picture2.jpg" srcset="./img/hotel-picture2@2x.jpg 2x, ./img/hotel-picture2@3x.jpg 3x"
-            class="hotel-picture" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
+      <div class="hotel-item">
+        <div class="hotel-item-column">
+          <img class="hotel-item-img" src="./img/hotel-picture2.jpg"
+            srcset="./img/hotel-picture2@2x.jpg 2x, ./img/hotel-picture2@3x.jpg 3x" width="135" height="90"
+            alt="Фото мотеля Desert Quail Inn">
         </div>
-        <div class="hotel-name">
+        <div class="hotel-item-name">
           <h2>Desert Quail Inn</h2>
           <p>Мотель</p>
           <p>От 3000р.</p>
-          <button class="more-button" type="button">Подробнее</button>
-          <button class="booking-button" type="submit">Забронировать</button>
+          <button class="button-more" type="button">Подробнее</button>
+          <button class="button-booking" type="submit">Забронировать</button>
         </div>
-        <div class="hotel-value">
+        <div class="hotel-item-value">
           <ul class="stars">
             <li><img src="./img/star.svg" class="star" width="18px" height="17px" alt="Звезда"></li>
             <li><img src="./img/star.svg" class="star" width="18px" height="17px" alt="Звезда"></li>
             <li><img src="./img/star.svg" class="star" width="18px" height="17px" alt="Звезда"></li>
           </ul>
           <p class="rating">Рейтинг: 8,9</p>
+          <!-- need or not add "hotel-item-value" before "star2 and "rating"?  -->
         </div>
       </div>
-      <div class="appart">
-        <div class="column">
-          <img src="./img/hotel-picture3.jpg" srcset="./img/hotel-picture3@2x.jpg 2x, ./img/hotel-picture3@3x.jpg 3x"
-            class="hotel-picture" width="135px" height="90px" alt="Фото апартаментов Villas at Poco Diablo">
+      <div class="hotel-item">
+        <div class="hotel-item-column">
+          <img class="hotel-item-img" src="./img/hotel-picture3.jpg"
+            srcset="./img/hotel-picture3@2x.jpg 2x, ./img/hotel-picture3@3x.jpg 3x" width="135px" height="90px"
+            alt="Фото апартаментов Villas at Poco Diablo">
         </div>
-        <div class="hotel-name">
+        <div class="hotel-item-name">
           <h2>Villas at Poco Diablo</h2>
           <p>Апартаменты</p>
           <p>От 2000р.</p>
-          <button class=" more-button" type="button">Подробнее</button>
-          <button class="booking-button" type="submit">Забронировать</button>
+          <button class="button-more" type="button">Подробнее</button>
+          <button class="button-booking" type="submit">Забронировать</button>
         </div>
-        <div class="hotel-value">
+        <div class="hotel-item-value">
           <ul class="stars">
             <li><img src="./img/star.svg" class="star" width="18px" height="17px" alt="Звезда"></li>
             <li><img src="./img/star.svg" class="star" width="18px" height="17px" alt="Звезда"></li>
@@ -160,27 +168,29 @@
       </div>
     </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
     <div class="footer-bottom">
-      <p class="footer-contacts">
+      <p class="footer-bottom-contacts">
         <a href="">#Visitsedona</a>
-        Тел: +7(495) 666-02-66
+        Тел:<a href="tel:+7(495) 666-02-66">+7(495) 666-02-66</a>
       </p>
-      <ul class="footer-social">
-        <li class="social-button"><a href="" area-label="Твиттер"><img src="./img/twitter.svg" class="twitter"
-              width="17px" height="15px" alt="Твиттер"></a></li>
-        <li class="social-button"><a href="" area-label="Фэйсбук"><img src="./img/fb-icon.svg" class="fb" width="12px"
-              height="22px" alt="Фэйсбук"></a></li>
-        <li class="social-button"><a href="" area-label="Ютуб"><img src="./img/youtube.svg" class="youtube" width="20px"
-              height="16px" alt="Ютуб"></a></li>
+      <ul class="footer-bottom-social-list">
+        <li class="footer-bottom-social-item"><a href="" area-label="Твиттер"><img class="twitter"
+              src="./img/twitter.svg" width="17px" height="15px" alt="Твиттер"></a></li>
+        <li class="footer-bottom-social-item"><a href="" area-label="Фэйсбук"><img class="fb" src="./img/fb-icon.svg"
+              width="12px" height="22px" alt="Фэйсбук"></a></li>
+        <li class="footer-bottom-social-item"><a href="" area-label="Ютуб"><img class="youtube" src="./img/youtube.svg"
+              width="20px" height="16px" alt="Ютуб"></a></li>
       </ul>
-      <p class="footer-copyright">
+      <p class="footer-bottom-copyright">
         <b>Website by</b>
-        <a href=""><img src="./img/logo-htmlacademy.svg" class="logo-htmlacademy" width="115px" height="41px"
-            alt="Логотип HTML Academy"></a>
+        <a href=""><img class="footer-bottom-copyright-logo" src="./img/logo-htmlacademy.svg" width="115px"
+            height="41px" alt="Логотип HTML Academy"></a>
       </p>
     </div>
   </footer>
   <script src="js/animation.js"></script>
 </body>
+</div>
+
 </html>
