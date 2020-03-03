@@ -18,12 +18,12 @@
           alt="Логотип  City of Sedona">
       </a>
       <ul class="header-nav-list left">
-        <li><a class="header-nav-list-link" href="">Информация</a></li>
-        <li><a class="header-nav-list-link" href="">Фото и видео</a></li>
+        <li class="header-nav-list-item" ><a href="">Информация</a></li>
+        <li class="header-nav-list-item"><a href="">Фото и видео</a></li>
       </ul>
       <ul class="header-nav-list right">
-        <li><a class="header-nav-list-link" href="">Карта штата</a></li>
-        <li><a class="header-nav-list-link" href="">Гостиницы</a></li>
+        <li class="header-nav-list-item"><a href="">Карта штата</a></li>
+        <li class="header-nav-list-item active"><a href="">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -65,15 +65,15 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter-range">
+        <fieldset class="filter-form-range">
           <legend class="filter-form-range-title">Стоимость в сутки (р):</legend>
           <div class="price-controls">
-            <label class="price-control-min-price">от <input type="number" name="min-price" value="0"></label>
-            <label class="price-control-max-price">до <input type="number" name="max-price" value="3000"></label>
+            <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
           </div>
           <div class="range-controls">
-            <div class="range-control-scale">
-              <div class="range-control-bar"></div>
+            <div class="scale">
+              <div class="bar"></div>
             </div>
             <div class="range-toggle range-toggle-min"></div>
             <div class="range-toggle range-toggle-max"></div>
