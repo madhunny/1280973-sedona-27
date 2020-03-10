@@ -49,7 +49,6 @@ a {
 
 .header-nav {
     display: flex;
-    justify-content: flex-start;
 }
 
 .header-nav-list {
@@ -70,6 +69,7 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    order: 1;
 }
 
 .header-nav-list-link {
@@ -230,22 +230,21 @@ a {
 
 .interest p {
     color: #333333;
+    margin: 0;
+    margin-bottom: 52px;
 }
 
 .button-interest {
     width: 568px;
-    height: 86px;
     background-color: #766357;
-    text-align: center;
     color: #ffffff;
-    font-family: "PT Sans";
     font-size: 21px;
     font-weight: bold;
     border: none;
-    margin-top: 52px;
-    margin-left: 316px;
-    margin-right: 316px;
-    position: absolute;
+    margin: auto;
+    padding-top: 35px;
+    padding-bottom: 33px;
+    position: relative;  
 }
 
 .modal {
@@ -256,7 +255,7 @@ a {
     background-color: #ffffff;
     z-index: 1;
     left: 50%;
-    bottom: -368px;
+    bottom: -395px;
     margin: 0 -284px;
 }
 
@@ -381,6 +380,8 @@ a {
 .fieldset {
     border: hidden;
     color: #ffffff;
+    padding: 0;
+    margin: 0;
 }
 
 .filter {
@@ -598,6 +599,7 @@ a {
 
 .button-sorting-icon-up {
     border: none;
+    background-color: url("../img/icon-up-dir.svg");
     fill: currentColor;
     color: rgba(0, 0, 0, 0.3);
 }
@@ -608,18 +610,6 @@ a {
 
 .button-sorting-icon-up:active {
     color: #81b3d2;
-}
-
-.button-sorting-icon-down {
-    
-}
-
-.button-sorting-icon-down:hover {
-    color: #81b3d2;
-}
-
-.button-sorting-icon-down:active {
-    color: #000000;
 }
 
 .hotel-item {
@@ -682,6 +672,7 @@ a {
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: column;
+    height: 90px;
 }
 
 .stars {
