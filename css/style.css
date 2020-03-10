@@ -382,6 +382,7 @@ a {
     color: #ffffff;
     padding: 0;
     margin: 0;
+    margin-right: 115px;
 }
 
 .filter {
@@ -393,7 +394,7 @@ a {
 
 .filter-form {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 72px;
     padding-right: 72px;
@@ -445,6 +446,8 @@ a {
     text-transform: uppercase;
     border: hidden;
     padding: 0;
+    margin: 0;
+    margin-left: 234px;
 }
 
 .filter-form-range-title {
@@ -564,11 +567,8 @@ a {
     height: 86px;
 }
 
-.count {}
-
 .sorting-list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     list-style: none;
@@ -674,7 +674,7 @@ a {
 
 .hotel-item-value {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
     flex-direction: column;
     height: 90px;
@@ -698,4 +698,5 @@ a {
     text-align: center;
     margin: 0;
     line-height: 27px;
+    margin-top: 47px;
 }
