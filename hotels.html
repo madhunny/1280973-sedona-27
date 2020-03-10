@@ -18,12 +18,13 @@
           alt="Логотип  City of Sedona">
       </a>
       <ul class="header-nav-list left">
-        <li class="header-nav-list-item"><a href="">Информация</a></li>
-        <li class="header-nav-list-item"><a href="">Фото и видео</a></li>
+        <li class="header-nav-list-item"><a class="header-nav-list-link" href="">Информация</a></li>
+        <li class="header-nav-list-item"><a class="header-nav-list-link" href="">Фото и видео</a></li>
       </ul>
       <ul class="header-nav-list right">
-        <li class="header-nav-list-item"><a href="">Карта штата</a></li>
-        <li class="header-nav-list-item"><a href="./hotels.html">Гостиницы</a></li>
+        <li class="header-nav-list-item"><a class="header-nav-list-link" href="">Карта штата</a></li>
+        <li class="header-nav-list-item"><a class="header-nav-list-link active" href="./hotels.html">Гостиницы</a></li>
+      </ul>
       </ul>
     </nav>
   </header>
@@ -78,21 +79,20 @@
             <div class="range-toggle range-toggle-min"></div>
             <div class="range-toggle range-toggle-max"></div>
           </div>
-        <button class="button-transparent" type="submit">Показать</button>
-      </fieldset>
+          <button class="button-transparent" type="submit">Показать</button>
+        </fieldset>
       </form>
     </section>
     <section class="sorting">
       <h2 class="sorting-h2">Найдено: <span class="count">3</span></h2>
       <ul class="sorting-list">
         <li>Сортировка:</li>
-        <li class="sorting-item"><a href="">По цене</a></li>
-        <li class="sorting-item"><a href="">По типу</a></li>
-        <li class="sorting-item"><a href="">По рейтингу</a></li>
+        <li class="sorting-item"><a class="sorting-item-link active" href="">По цене</a></li>
+        <li class="sorting-item"><a class="sorting-item-link" href="">По типу</a></li>
+        <li class="sorting-item"><a class="sorting-item-link" href="">По рейтингу</a></li>
       </ul>
       <div class="sorting-icon">
-        <button class="button-sorting-icon-up" type="submit"><img src="./img/icon-up-dir.svg" width="11px" height="10px"
-            alt="Стрелка вверх"></button>
+        <button class="button-sorting-icon-up" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg> </button>
         <button class="button-sorting-icon-down" type="submit"><img src="./img/icon-down-dir.svg" width="11px"
             height="10px" alt="Стрелка вниз"></button>
       </div>
@@ -107,10 +107,16 @@
         </div class>
         <div class="hotel-item-name">
           <h2>Amara Resort & Spa</h2>
-          <p>Гостиница</p>
-          <p>От 4000р.</p>
-          <button class="button-more" type="button">Подробнее</button>
-          <button class="button-booking" type="submit">Забронировать</button>
+          <div class="hotel-item-name-div">
+            <div class="div1">
+              <p>Гостиница</p>
+              <button class="button-more" type="button">Подробнее</button>
+            </div>
+            <div>
+              <p>От 4000р.</p>
+              <button class="button-booking" type="submit">Забронировать</button>
+            </div>
+          </div>
         </div>
         <div class="hotel-item-value">
           <ul class="stars">
@@ -130,10 +136,16 @@
         </div>
         <div class="hotel-item-name">
           <h2>Desert Quail Inn</h2>
-          <p>Мотель</p>
-          <p>От 3000р.</p>
-          <button class="button-more" type="button">Подробнее</button>
-          <button class="button-booking" type="submit">Забронировать</button>
+          <div class="hotel-item-name-div">
+            <div class="div1">
+              <p>Мотель</p>
+              <button class="button-more" type="button">Подробнее</button>
+            </div>
+            <div>
+              <p>От 3000р.</p>
+              <button class="button-booking" type="submit">Забронировать</button>
+            </div>
+          </div>
         </div>
         <div class="hotel-item-value">
           <ul class="stars">
@@ -142,7 +154,6 @@
             <li><img src="./img/star.svg" class="star" width="18px" height="17px" alt="Звезда"></li>
           </ul>
           <p class="rating">Рейтинг: 8,9</p>
-          <!-- need or not add "hotel-item-value" before "star2 and "rating"?  -->
         </div>
       </div>
       <div class="hotel-item">
@@ -153,10 +164,16 @@
         </div>
         <div class="hotel-item-name">
           <h2>Villas at Poco Diablo</h2>
-          <p>Апартаменты</p>
-          <p>От 2000р.</p>
-          <button class="button-more" type="button">Подробнее</button>
-          <button class="button-booking" type="submit">Забронировать</button>
+          <div class="hotel-item-name-div">
+            <div class="div1">
+              <p>Апартаменты</p>
+              <button class="button-more" type="button">Подробнее</button>
+            </div>
+            <div>
+              <p>От 2000р.</p>
+              <button class="button-booking" type="submit">Забронировать</button>
+            </div>
+          </div>
         </div>
         <div class="hotel-item-value">
           <ul class="stars">
@@ -171,8 +188,8 @@
   <footer class="footer">
     <div class="footer-bottom">
       <p class="footer-bottom-contacts">
-        <a href="">#Visitsedona</a>
-        Тел:<a href="tel:+7(495) 666-02-66">+7(495) 666-02-66</a>
+        #Visitsedona
+        Тел:&nbsp<a href="tel:+7(495) 666-02-66">+7(495) 666-02-66</a>
       </p>
       <ul class="footer-bottom-social-list">
         <li class="footer-bottom-social-item"><a href="" area-label="Твиттер"><img class="twitter"
