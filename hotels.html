@@ -36,16 +36,25 @@
           <legend class="filter-legend">Инфраструктура:</legend>
           <ul class="filter-form-list">
             <li class="filter-form-item">
-              <input class="checkbox-on" type="checkbox" name="pool" id="pool-field" checked>
-              <label for="pool-field">Бассейн</label>
+              <label class="check">
+                <input class="check-input" type="checkbox" checked disabled>
+                <span class="check-box"></span>
+                Бассейн
+              </label>
             </li>
             <li class="filter-form-item">
-              <input class="checkbox-off" type="checkbox" name="parking" id="parking-field">
-              <label for="parking-field">Парковка</label>
+              <label class="check">
+                <input class="check-input" type="checkbox">
+                <span class="check-box"></span>
+                Парковка
+              </label>
             </li>
             <li class="filter-form-item">
-              <input class="checkbox-off" type="checkbox" name="Wi-fi" id="wi-fi-field">
-              <label for="wi-fi-field">Wi-fi</label>
+              <label class="check">
+                <input class="check-input" type="checkbox">
+                <span class="check-box"></span>
+                Wi-fi
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -53,16 +62,25 @@
           <legend class="filter-legend">Тип жилья:</legend>
           <ul class="filter-form-list">
             <li class="filter-form-item">
-              <input class="checkbox-on" type="checkbox" name="hotel" id="hotel-field" checked>
-              <label for="hotel-field">Гостиница</label>
+              <label class="check">
+              <input class="check-input" type="checkbox" checked>
+              <span class="check-box"></span>
+              Гостиница
+            </label>
             </li>
             <li class="filter-form-item">
-              <input class="checkbox-on" type="checkbox" name="motel" id="motel-field" checked>
-              <label for="motel-field">Мотель</label>
+              <label class="check">
+                <input class="check-input" type="checkbox" checked>
+                <span class="check-box"></span>
+                Мотель
+              </label>
             </li>
             <li class="filter-form-item">
-              <input class="checkbox-on" type="checkbox" name="appartments" id="appartments-field" checked>
-              <label for="appartments-field"> Апартаменты</label>
+              <label class="check">
+                <input class="check-input" type="checkbox" checked>
+                <span class="check-box"></span> 
+                Апартаменты
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -92,7 +110,9 @@
         <li class="sorting-item"><a class="sorting-item-link" href="">По рейтингу</a></li>
       </ul>
       <div class="sorting-icon">
-        <button class="button-sorting-icon-up" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg> </button>
+        <button class="button-sorting-icon-up" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="11"
+            height="10" viewBox="0 0 11 10">
+            <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg> </button>
         <button class="button-sorting-icon-down" type="submit"><img src="./img/icon-down-dir.svg" width="11px"
             height="10px" alt="Стрелка вниз"></button>
       </div>
