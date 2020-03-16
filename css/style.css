@@ -410,6 +410,10 @@ a {
     margin: 0;
 }
 
+.form-check label {
+    width: 25%;
+}
+
 .form-people {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -438,7 +442,6 @@ a {
     background-color: #f2f2f2;
     font-weight: bold;
     -webkit-appearance: none;
-    margin-left: 22px;
     padding-left: 10px;
 }
 
