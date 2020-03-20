@@ -6,13 +6,13 @@
 }
 
 .page {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
     color: black;
     text-transform: uppercase;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     background-position: top center;
     background-repeat: no-repeat;
     min-width: 1200px;
@@ -103,7 +103,7 @@ a {
 .header-nav-list-link {
     text-decoration: none;
     color: black;
-    padding: 10px 20px;
+    padding: 0;
 }
 
 .header-nav-list-link.hotels {
@@ -183,6 +183,15 @@ a {
     margin: auto;
     padding-top: 42px;
     padding-bottom: 37px;
+    font-size: 14px;
+}
+
+.reason-h2 {
+    letter-spacing: 0.15px;
+}
+
+.reason-p {
+    letter-spacing: 0.1px;
 }
 
 .benefits {
@@ -255,11 +264,13 @@ a {
 .benefits-item-p {
     margin-top: -11px;
     margin-bottom: 24px;
+    color: #333333;
 }
 
 .benefits-item-p-souvenir {
     margin-top: -9px;
     margin-bottom: 27px;
+    color: #333333;
 }
 
 .benefits-item::before {
@@ -412,6 +423,7 @@ a {
 
 .form-check label {
     width: 25%;
+    letter-spacing: 0.4px;
 }
 
 .form-people {
@@ -490,6 +502,7 @@ a {
     border: none;
     margin: 0;
     padding: 0;
+    font-family: inherit;
 }
 
 .form-people-input::-webkit-cler-button {
@@ -537,6 +550,7 @@ a {
     border: none;
     text-transform: uppercase;
     padding: 0;
+    font-family: inherit;
 }
 
 .form-button-submit:hover {
@@ -942,24 +956,22 @@ a {
 
 .sorting-item-link {
     color: rgba(0, 0, 0, 0.3);
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted;
+    border-bottom: dotted #81b3d2;
+    border-width: thin;
 }
 
 .sorting-item-link:hover {
     color: #81b3d2;
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted;
 }
 
 .sorting-item-link:active {
     color: #000000;
-    text-decoration: none;
+    border: none;
 }
 
 .sorting-item-link.active {
     color: #81b3d2;
-    text-decoration: none;
+    border: none;
 }
 
 .sorting-icon-button {
@@ -1008,14 +1020,19 @@ a {
 
 .hotel-item-name-h2 {
     margin-bottom: 2px;
-    margin-top: -4px;
+    margin-top: 0;
+    letter-spacing: 0.3px;
 }
 
-.hotel-item-name-h2:hover {
+.hotel-item-name-link {
+    color: #000000;
+}
+
+.hotel-item-name-link:hover {
     color: #81b3d2;
 }
 
-.hotel-item-name-h2:active {
+.hotel-item-name-link:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1032,7 +1049,7 @@ a {
 }
 
 .hotel-item-name-p {
-    margin: 12px 0;
+    margin: 8px 0 14px;
 }
 
 .div1 {
