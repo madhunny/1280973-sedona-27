@@ -12,7 +12,7 @@
     font-weight: normal;
     color: black;
     text-transform: uppercase;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     background-position: top center;
     background-repeat: no-repeat;
     min-width: 1200px;
@@ -223,16 +223,17 @@ a {
     -ms-flex-direction: column;
     flex-direction: column;
     margin: auto 49px;
+    width: 33%;
 }
 
 .benefits-text-h2 {
-    width: 160px;
-    margin: auto;
+    width: 158px;
+    margin: 0 auto 17px;
 }
 
 .benefits-text-p {
-    margin-top: 25px;
-    margin-bottom: 7px;
+    margin: 8px 0;
+    padding: 0 10px;
 }
 
 .benefits-list {
@@ -263,14 +264,16 @@ a {
 
 .benefits-item-p {
     margin-top: -11px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     color: #333333;
+    line-height: 21px;
 }
 
 .benefits-item-p-souvenir {
-    margin-top: -9px;
-    margin-bottom: 27px;
+    margin-top: -10px;
+    margin-bottom: 26px;
     color: #333333;
+    line-height: 21px;
 }
 
 .benefits-item::before {
@@ -311,6 +314,7 @@ a {
     -ms-flex-direction: row;
     flex-direction: row;
     background-color: #f2f2f2;
+    font-size: 14px;
 }
 
 .benefits-extra {
@@ -345,7 +349,7 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
-    padding-top: 51px;
+    padding-top: 50px;
     margin: 0;
     position: relative;
 }
@@ -359,7 +363,6 @@ a {
 .interest-p {
     color: #333333;
     margin: 0;
-    line-height: 23px;
 }
 
 .interest-button {
@@ -370,10 +373,10 @@ a {
     font-weight: bold;
     border: none;
     margin: 0 auto;
-    padding-top: 32px;
-    padding-bottom: 34px;
+    padding-top: 33px;
+    padding-bottom: 32px;
     position: relative;
-    margin-top: 48px;
+    margin-top: 50px;
 }
 
 .interest-button:hover {
@@ -416,9 +419,8 @@ a {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    padding-bottom: 29px;
     position: relative;
-    margin: 0;
+    margin: 0 0 28px;
 }
 
 .form-check label {
@@ -452,7 +454,10 @@ a {
     width: 332px;
     border: none;
     background-color: #f2f2f2;
+    font-size: inherit;
+    font-family: inherit;
     font-weight: bold;
+    text-transform: uppercase;
     -webkit-appearance: none;
     padding-left: 10px;
 }
@@ -512,6 +517,7 @@ a {
 .form-button-minus, .form-button-plus {
     text-align: center;
     font-weight: bolder;
+    font-size: 18px;
     background-color: #f2f2f2;
     color: #cacaca;
     width: 38px;
@@ -584,12 +590,11 @@ a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding: 26px 100px 26px 114px;
     background-color: #ffffff;
     opacity: 0.9;
     position: relative;
@@ -597,13 +602,13 @@ a {
 
 .footer-bottom-contacts {
     font-size: 21px;
-    line-height: 27px;
+    line-height: 30px;
     font-weight: bold;
     color: #000000;
     text-decoration: none;
-    width: 250px;
+    width: 225px;
     margin: 0;
-    margin-left: 17px;
+    margin-left: 11px;
 }
 
 .footer-bottom-contacts-a {
@@ -626,7 +631,7 @@ a {
     list-style: none;
     padding-left: 0;
     margin: 0;
-    margin-left: -89px;
+    margin-left: 168px;
 }
 
 .footer-bottom-social-item {
@@ -666,8 +671,7 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 0;
-    margin-right: -12px;
+    margin-left: auto;
 }
 
 .footer-bottom-copyright-logo {
@@ -730,6 +734,7 @@ a {
     line-height: 21px;
     padding: 0;
     margin: 0;
+    color: #ffffff;
 }
 
 .filter-form-list {
@@ -805,6 +810,7 @@ a {
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
+    color: #ffffff;
 }
 
 .price-controls {
