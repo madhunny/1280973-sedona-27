@@ -1,38 +1,36 @@
 .wrapper {
-    -webkit-box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 1, 1, .2);
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, .2);
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .page {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
-    font-weight: normal;
-    color: black;
+    font-weight: 400;
+    color: #000;
     text-transform: uppercase;
-    background-color: #ffffff;
+    background-color: #fff;
     background-position: top center;
     background-repeat: no-repeat;
     min-width: 1200px;
-    margin: 0;
+    margin: 0
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none
 }
 
 .img {
     max-width: 100%;
-    height: auto;
+    height: auto
 }
 
 .visually-hidden {
-    display: none;
+    display: none
 }
-
-/*navigation menu top page*/
 
 .header {
     display: -webkit-box;
@@ -43,31 +41,31 @@ a {
     justify-content: flex-start;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    height: 56px;
+    height: 56px
 }
 
 .header-logo {
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .header-logo-img {
     width: 140px;
-    height: 71px;
+    height: 71px
 }
 
 .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 100%
 }
 
 .header-nav-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-weight: bold;
-    width: 530px;
+    font-weight: 700;
+    width: 530px
 }
 
 .left {
@@ -82,7 +80,7 @@ a {
     align-items: center;
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
-    order: -1;
+    order: -1
 }
 
 .right {
@@ -97,48 +95,46 @@ a {
     align-items: center;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
-    order: 1;
+    order: 1
 }
 
 .header-nav-list-link {
     text-decoration: none;
-    color: black;
-    padding: 0;
+    color: #000;
+    padding: 0
 }
 
 .header-nav-list-link.hotels {
-    margin-left: 16px;
+    margin-left: 16px
 }
 
 .header-nav-list-item-left {
     margin: 0;
     width: 239px;
-    text-align: center;
+    text-align: center
 }
 
 .header-nav-list-item-right {
     margin: 0;
     width: 239px;
-    text-align: center;
+    text-align: center
 }
 
 .header-nav-list-link:hover {
-    color: #81b3d2;
+    color: #81b3d2
 }
 
 .header-nav-list-link:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, .3)
 }
 
 .header-nav-list-link.active {
-    color: #766357;
+    color: #766357
 }
 
-/* index main page*/
-
 .container {
-    background-color: #ffffff;
-    width: 1200px;
+    background-color: #fff;
+    width: 1200px
 }
 
 .welcome {
@@ -148,7 +144,7 @@ a {
     height: 508px;
     background-position-x: 0;
     background-position-y: -83px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 .welcome::after {
@@ -159,11 +155,11 @@ a {
     background-image: url(../img/polygon.png);
     background-size: 1202px 59px;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom
 }
 
 .welcome-img {
-    margin-top: 76px;
+    margin-top: 76px
 }
 
 .reason {
@@ -183,19 +179,19 @@ a {
     margin: auto;
     padding-top: 42px;
     padding-bottom: 37px;
-    font-size: 14px;
+    font-size: 14px
 }
 
 .reason-h2 {
-    letter-spacing: 0.15px;
+    letter-spacing: .15px
 }
 
 .reason-p {
-    letter-spacing: 0.1px;
+    letter-spacing: .1px
 }
 
 .benefits {
-    min-height: 1098px;
+    min-height: 1098px
 }
 
 .benefits-one {
@@ -211,7 +207,7 @@ a {
     align-items: center;
     text-align: center;
     background-color: #81b3d2;
-    color: #ffffff;
+    color: #fff
 }
 
 .benefits-text {
@@ -223,17 +219,17 @@ a {
     -ms-flex-direction: column;
     flex-direction: column;
     margin: auto 49px;
-    width: 33%;
+    width: 33%
 }
 
 .benefits-text-h2 {
     width: 158px;
-    margin: 0 auto 17px;
+    margin: 0 auto 17px
 }
 
 .benefits-text-p {
     margin: 8px 0;
-    padding: 0 10px;
+    padding: 0 10px
 }
 
 .benefits-list {
@@ -249,41 +245,40 @@ a {
     list-style: none;
     margin: auto;
     padding: 0;
-    height: 330px;
+    height: 330px
 }
 
 .benefits-item {
     width: 300px;
-    margin: auto;
+    margin: auto
 }
 
 .benefits-item-h2 {
     margin-bottom: 34px;
-    margin-top: 23px;
+    margin-top: 23px
 }
 
 .benefits-item-p {
     margin-top: -11px;
     margin-bottom: 22px;
-    color: #333333;
-    line-height: 21px;
+    color: #333;
+    line-height: 21px
 }
 
 .benefits-item-p-souvenir {
     margin-top: -10px;
     margin-bottom: 26px;
-    color: #333333;
-    line-height: 21px;
+    color: #333;
+    line-height: 21px
 }
 
 .benefits-item::before {
     content: "";
     display: block;
     width: 100%;
-    background-image: url();
     background-size: 1202px 59px;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom
 }
 
 .benefits-two {
@@ -299,7 +294,7 @@ a {
     align-items: center;
     text-align: center;
     background-color: #81b3d2;
-    color: #ffffff;
+    color: #fff
 }
 
 .extra {
@@ -314,7 +309,7 @@ a {
     -ms-flex-direction: row;
     flex-direction: row;
     background-color: #f2f2f2;
-    font-size: 14px;
+    font-size: 14px
 }
 
 .benefits-extra {
@@ -334,7 +329,7 @@ a {
     width: 286px;
     margin: auto;
     padding-top: 46px;
-    padding-bottom: 46px;
+    padding-bottom: 46px
 }
 
 .interest {
@@ -351,41 +346,41 @@ a {
     text-align: center;
     padding-top: 50px;
     margin: 0;
-    position: relative;
+    position: relative
 }
 
 .interest-h2 {
     font-size: 30px;
     line-height: 36px;
-    margin-top: 0;
+    margin-top: 0
 }
 
 .interest-p {
-    color: #333333;
-    margin: 0;
+    color: #333;
+    margin: 0
 }
 
 .interest-button {
     width: 568px;
     background-color: #766357;
-    color: #ffffff;
+    color: #fff;
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 700;
     border: none;
     margin: 0 auto;
     padding-top: 33px;
     padding-bottom: 32px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 50px
 }
 
 .interest-button:hover {
-    background-color: #604e43;
+    background-color: #604e43
 }
 
 .interest-button:active {
     background-color: #503e33;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, .3)
 }
 
 .modal {
@@ -394,15 +389,15 @@ a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #fff;
     z-index: 1;
     left: 50%;
     bottom: -395px;
-    margin: 0 -284px;
+    margin: 0 -284px
 }
 
 .form-inside {
-    padding: 55px;
+    padding: 55px
 }
 
 .form-check {
@@ -417,15 +412,15 @@ a {
     align-items: center;
     text-align: left;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     position: relative;
-    margin: 0 0 28px;
+    margin: 0 0 28px
 }
 
 .form-check label {
     width: 25%;
-    letter-spacing: 0.4px;
+    letter-spacing: .4px
 }
 
 .form-people {
@@ -443,10 +438,10 @@ a {
     -ms-flex-align: center;
     align-items: center;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     padding-bottom: 53px;
-    margin: 0px;
-    margin-top: 2px;
+    margin: 0;
+    margin-top: 2px
 }
 
 .form-calendar {
@@ -456,20 +451,20 @@ a {
     background-color: #f2f2f2;
     font-size: inherit;
     font-family: inherit;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     -webkit-appearance: none;
-    padding-left: 10px;
+    padding-left: 10px
 }
 
 .form-calendar:hover {
-    background-color: #ebebeb;
+    background-color: #ebebeb
 }
 
 .form-calendar:focus {
-    background-color: #ffffff;
+    background-color: #fff;
     border: #e5e5e5;
-    border-width: 2px;
+    border-width: 2px
 }
 
 .form-calendar-icon {
@@ -479,39 +474,39 @@ a {
     right: 9px;
     top: 7px;
     background-color: transparent;
-    color: #cacaca;
+    color: #cacaca
 }
 
 .form-calendar-icon:hover {
-    color: #000000;
+    color: #000
 }
 
 .form-calendar-icon:active {
-    color: #81b3d2;
+    color: #81b3d2
 }
 
 .form-calendar::-webkit-calendar-picker-indicator {
-    display: none;
+    display: none
 }
 
 .form-calendar::-webkit-clear-button {
-    display: none;
+    display: none
 }
 
 .form-people-input {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     background-color: #f2f2f2;
     width: 38px;
     height: 38px;
     border: none;
     margin: 0;
     padding: 0;
-    font-family: inherit;
+    font-family: inherit
 }
 
 .form-people-input::-webkit-cler-button {
-    display: none;
+    display: none
 }
 
 .form-button-minus, .form-button-plus {
@@ -524,25 +519,25 @@ a {
     height: 38px;
     border: none;
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 .form-button-minus:hover, .form-button-plus:hover {
-    color: #000000;
+    color: #000
 }
 
 .form-button-minus:active, .form-button-plus:active {
-    color: #81b3d2;
+    color: #81b3d2
 }
 
 .adult {
     margin: 0 auto;
-    margin-left: 0;
+    margin-left: 0
 }
 
 .kids {
     margin-left: 53px;
-    margin-right: 26px;
+    margin-right: 26px
 }
 
 .form-button-submit {
@@ -550,39 +545,37 @@ a {
     height: 58px;
     background-color: #81b3d2;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 700;
     border: none;
     text-transform: uppercase;
     padding: 0;
-    font-family: inherit;
+    font-family: inherit
 }
 
 .form-button-submit:hover {
-    background-color: #669ec0;
+    background-color: #669ec0
 }
 
 .form-button-submit:active {
     background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, .3)
 }
-
-/*footer*/
 
 .footer {
     width: 1200px;
-    background-color: #ffffff;
-    opacity: 0.9;
+    background-color: #fff;
+    opacity: .9
 }
 
 .footer-map {
-    margin-bottom: -120px;
+    margin-bottom: -120px
 }
 
 .footer-map-img {
     width: 1200px;
-    height: 587px;
+    height: 587px
 }
 
 .footer-bottom {
@@ -595,24 +588,24 @@ a {
     -ms-flex-align: center;
     align-items: center;
     padding: 26px 100px 26px 114px;
-    background-color: #ffffff;
-    opacity: 0.9;
-    position: relative;
+    background-color: #fff;
+    opacity: .9;
+    position: relative
 }
 
 .footer-bottom-contacts {
     font-size: 21px;
     line-height: 30px;
-    font-weight: bold;
-    color: #000000;
+    font-weight: 700;
+    color: #000;
     text-decoration: none;
     width: 225px;
     margin: 0;
-    margin-left: 11px;
+    margin-left: 11px
 }
 
 .footer-bottom-contacts-a {
-    color: #000000;
+    color: #000
 }
 
 .footer-bottom-social-list {
@@ -631,7 +624,7 @@ a {
     list-style: none;
     padding-left: 0;
     margin: 0;
-    margin-left: 168px;
+    margin-left: 168px
 }
 
 .footer-bottom-social-item {
@@ -648,17 +641,17 @@ a {
     height: 48px;
     margin-left: 6px;
     background-color: #81b3d2;
-    color: #ffffff;
+    color: #fff
 }
 
 .footer-bottom-social-item:hover {
     background-color: #669ec0;
-    color: #ffffff;
+    color: #fff
 }
 
 .footer-bottom-social-item:active {
     background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, .3)
 }
 
 .footer-bottom-copyright {
@@ -671,38 +664,36 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: auto;
+    margin-left: auto
 }
 
 .footer-bottom-copyright-logo {
     width: 115px;
     height: 41px;
     background-color: transparent;
-    color: #000000;
+    color: #000
 }
 
 .footer-bottom-copyright-logo:hover {
-    color: #81b3d2;
+    color: #81b3d2
 }
 
 .footer-bottom-copyright-logo:active {
-    color: #bdbbbc;
+    color: #bdbbbc
 }
 
 .footer-bottom-copyright-b {
     font-size: 14px;
     line-height: 26px;
-    margin-right: 8px;
+    margin-right: 8px
 }
-
-/*second page*/
 
 .fieldset {
     border: hidden;
-    color: #ffffff;
+    color: #fff;
     padding: 0;
     margin: 0;
-    margin-right: 120px;
+    margin-right: 120px
 }
 
 .filter {
@@ -710,7 +701,7 @@ a {
     width: 1200px;
     height: 217px;
     background-position: 50%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 .filter-form {
@@ -725,7 +716,7 @@ a {
     align-items: center;
     padding-left: 72px;
     padding-right: 72px;
-    height: 213px;
+    height: 213px
 }
 
 .filter-legend {
@@ -734,22 +725,22 @@ a {
     line-height: 21px;
     padding: 0;
     margin: 0;
-    color: #ffffff;
+    color: #fff
 }
 
 .filter-form-list {
     list-style: none;
-    color: #ffffff;
+    color: #fff;
     padding: 0;
-    margin: 0;
+    margin: 0
 }
 
 .filter-form-item {
-    margin-top: 25px;
+    margin-top: 25px
 }
 
 .check {
-    padding-left: 38px;
+    padding-left: 38px
 }
 
 .check-input {
@@ -757,7 +748,7 @@ a {
     width: 1px;
     height: 1px;
     overflow: hidden;
-    clip: rect(0 0 0 0);
+    clip: rect(0 0 0 0)
 }
 
 .check-box, .check-box:hover {
@@ -766,7 +757,7 @@ a {
     height: 23px;
     background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;
-    margin-left: -38px;
+    margin-left: -38px
 }
 
 .check-input:checked+.check-box, .check-input:checked:hover+.check-box {
@@ -774,7 +765,7 @@ a {
     background-image: url(../img/checkbox-on.svg);
     width: 27px;
     height: 23px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 .check-input:disabled+.check-box {
@@ -782,7 +773,7 @@ a {
     background-image: url(../img/checkbox-off-disabled.svg);
     width: 23px;
     height: 23px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 .check-input:checked:disabled+.check-box {
@@ -790,19 +781,17 @@ a {
     background-image: url(../img/checkbox-on-disabled.svg);
     width: 27px;
     height: 23px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
-
-/*form for price*/
 
 .filter-form-range {
     width: 330px;
-    color: #ffffff;
+    color: #fff;
     text-transform: uppercase;
     border: hidden;
     padding: 0;
     margin: 0;
-    margin-left: 234px;
+    margin-left: 234px
 }
 
 .filter-form-range-title {
@@ -810,7 +799,7 @@ a {
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
-    color: #ffffff;
+    color: #fff
 }
 
 .price-controls {
@@ -818,8 +807,8 @@ a {
     height: 31px;
     margin-bottom: 20px;
     font-size: 0;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
+    border: 2px solid #fff;
+    border-radius: 2px
 }
 
 .price-controls::after {
@@ -829,10 +818,10 @@ a {
     left: 50%;
     width: 2px;
     height: 22px;
-    background: #ffffff;
+    background: #fff;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
 }
 
 .price-controls label {
@@ -841,12 +830,12 @@ a {
     line-height: 30px;
     vertical-align: top;
     cursor: pointer;
-    margin-right: -8px;
+    margin-right: -8px
 }
 
-.price-controls .min-price, .price-controls .max-price {
+.price-controls .max-price, .price-controls .min-price {
     width: 90px;
-    padding-left: 65px;
+    padding-left: 65px
 }
 
 .price-controls input {
@@ -854,24 +843,24 @@ a {
     margin: 0;
     color: inherit;
     font: inherit;
-    background: none;
-    border: none;
+    background: 0 0;
+    border: none
 }
 
 .range-controls {
     position: relative;
-    margin-bottom: 32px;
+    margin-bottom: 32px
 }
 
 .range-controls.scale {
     height: 2px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, .3)
 }
 
 .range-controls .bar {
     width: 80%;
     height: 2px;
-    background: #ffffff;
+    background: #fff
 }
 
 .range-toggle {
@@ -880,23 +869,23 @@ a {
     width: 4px;
     height: 4px;
     background: #ababab;
-    border: 8px solid #ffffff;
+    border: 8px solid #fff;
     border-radius: 50%;
-    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    cursor: pointer;
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
+    cursor: pointer
 }
 
 .range-toggle:hover {
-    background: #1c4f80;
+    background: #1c4f80
 }
 
 .range-toggle-min {
-    left: 0;
+    left: 0
 }
 
 .range-toggle-max {
-    left: 80%;
+    left: 80%
 }
 
 .filter-form-button-transparent {
@@ -905,18 +894,18 @@ a {
     padding: 6px 30px;
     font-size: 14px;
     line-height: 20px;
-    color: #ffffff;
+    color: #fff;
     text-transform: uppercase;
-    background: transparent;
-    border: 2px solid #ffffff;
+    background: 0 0;
+    border: 2px solid #fff;
     border-radius: 2px;
     cursor: pointer;
-    margin-right: 96px;
+    margin-right: 96px
 }
 
 .filter-form-button-transparent:hover {
-    color: #000000;
-    background: #ffffff;
+    color: #000;
+    background: #fff
 }
 
 .sorting {
@@ -931,7 +920,7 @@ a {
     align-items: center;
     padding-left: 72px;
     padding-right: 72px;
-    height: 86px;
+    height: 86px
 }
 
 .sorting-list {
@@ -949,51 +938,51 @@ a {
     padding: 0;
     font-size: 12px;
     margin-left: 47px;
-    margin-right: auto;
+    margin-right: auto
 }
 
 .sorting-item {
-    margin-left: 33px;
+    margin-left: 33px
 }
 
 .sorting-item-sort {
-    margin-right: 7px;
+    margin-right: 7px
 }
 
 .sorting-item-link {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, .3);
     border-bottom: dotted #81b3d2;
-    border-width: thin;
+    border-width: thin
 }
 
 .sorting-item-link:hover {
-    color: #81b3d2;
+    color: #81b3d2
 }
 
 .sorting-item-link:active {
-    color: #000000;
-    border: none;
+    color: #000;
+    border: none
 }
 
 .sorting-item-link.active {
     color: #81b3d2;
-    border: none;
+    border: none
 }
 
 .sorting-icon-button {
     border: none;
     background-color: transparent;
-    color: #cacaca;
+    color: #cacaca
 }
 
 .sorting-icon-button:hover {
-    color: #000000;
+    color: #000
 }
 
 .sorting-icon-button.active, .sorting-icon-button:active {
     color: #81b3d2;
     margin-right: -5px;
-    margin-left: -4px;
+    margin-left: -4px
 }
 
 .hotel-item {
@@ -1010,36 +999,36 @@ a {
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     padding-left: 72px;
-    padding-right: 72px;
+    padding-right: 72px
 }
 
 .hotel-item-img {
     width: 135px;
     margin: 0;
-    display: block;
+    display: block
 }
 
 .hotel-item-name {
     margin-left: 30px;
-    margin-right: auto;
+    margin-right: auto
 }
 
 .hotel-item-name-h2 {
     margin-bottom: 2px;
     margin-top: 0;
-    letter-spacing: 0.3px;
+    letter-spacing: .3px
 }
 
 .hotel-item-name-link {
-    color: #000000;
+    color: #000
 }
 
 .hotel-item-name-link:hover {
-    color: #81b3d2;
+    color: #81b3d2
 }
 
 .hotel-item-name-link:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, .3)
 }
 
 .hotel-item-name-div {
@@ -1051,15 +1040,15 @@ a {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row;
+    flex-direction: row
 }
 
 .hotel-item-name-p {
-    margin: 8px 0 14px;
+    margin: 8px 0 14px
 }
 
 .div1 {
-    margin-right: 6px;
+    margin-right: 6px
 }
 
 .hotel-item-button-more {
@@ -1067,19 +1056,19 @@ a {
     height: 27px;
     background-color: #81b3d2;
     border: none;
-    color: #ffffff;
+    color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
+    font-weight: 700;
+    font-size: 12px
 }
 
 .hotel-item-button-more:hover {
-    background-color: #669ec0;
+    background-color: #669ec0
 }
 
 .hotel-item-button-more:active {
     background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, .3)
 }
 
 .hotel-item-button-booking {
@@ -1087,19 +1076,19 @@ a {
     height: 27px;
     background-color: #766357;
     border: none;
-    color: #ffffff;
+    color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
+    font-weight: 700;
+    font-size: 12px
 }
 
 .hotel-item-button-booking:hover {
-    background-color: #604e43;
+    background-color: #604e43
 }
 
 .hotel-item-button-booking:active {
     background-color: #503e33;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, .3)
 }
 
 .hotel-item-value {
@@ -1115,7 +1104,7 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 90px;
+    height: 90px
 }
 
 .stars {
@@ -1124,11 +1113,11 @@ a {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 .stars li {
-    margin-left: 5px;
+    margin-left: 5px
 }
 
 .rating {
@@ -1138,5 +1127,5 @@ a {
     text-align: center;
     margin: 0;
     line-height: 27px;
-    margin-top: 42px;
+    margin-top: 42px
 }
