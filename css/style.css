@@ -144,7 +144,8 @@ a {
     height: 508px;
     background-position-x: 0;
     background-position-y: -83px;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    background-color: #81b3d2;
 }
 
 .welcome::after {
@@ -369,9 +370,11 @@ a {
     border: none;
     margin: 0 auto;
     padding-top: 33px;
-    padding-bottom: 32px;
+    padding-bottom: 28px;
     position: relative;
-    margin-top: 50px
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-family: inherit;
 }
 
 .interest-button:hover {
@@ -474,7 +477,14 @@ a {
     right: 9px;
     top: 7px;
     background-color: transparent;
-    color: #cacaca
+    color: #cacaca;
+    border: none;
+}
+
+.form-calendar-img {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .form-calendar-icon:hover {
@@ -701,7 +711,8 @@ a {
     width: 1200px;
     height: 217px;
     background-position: 50%;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    background-color: #81b3d2;
 }
 
 .filter-form {
@@ -981,8 +992,8 @@ a {
 
 .sorting-icon-button.active, .sorting-icon-button:active {
     color: #81b3d2;
-    margin-right: -5px;
-    margin-left: -4px
+    margin-right: 0;
+    margin-left: 9px
 }
 
 .hotel-item {
@@ -1044,7 +1055,7 @@ a {
 }
 
 .hotel-item-name-p {
-    margin: 8px 0 14px
+    margin: 7px 0 18px
 }
 
 .div1 {
@@ -1059,7 +1070,8 @@ a {
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 12px
+    font-size: 14px;
+    padding: 5px 17px;
 }
 
 .hotel-item-button-more:hover {
@@ -1079,7 +1091,8 @@ a {
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 12px
+    font-size: 14px;
+    padding: 5px 17px;
 }
 
 .hotel-item-button-booking:hover {
