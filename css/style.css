@@ -246,7 +246,8 @@ a {
     list-style: none;
     margin: auto;
     padding: 0;
-    height: 330px
+    height: 330px;
+    flex-wrap: wrap;
 }
 
 .benefits-item {
@@ -310,7 +311,8 @@ a {
     -ms-flex-direction: row;
     flex-direction: row;
     background-color: #f2f2f2;
-    font-size: 14px
+    font-size: 14px;
+    flex-wrap: wrap;
 }
 
 .benefits-extra {
@@ -881,7 +883,7 @@ a {
     height: 4px;
     background: #ababab;
     border: 8px solid #fff;
-    border-radius: 50%;
+    border-radius: 50% 50%;
     -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
     cursor: pointer
